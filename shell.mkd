@@ -71,7 +71,7 @@ eg: test -d /home ; [-d /home]
 -  for 
 -  until 
 -  break continue
--
+
 ##函数
 - 定义
 - 调用
