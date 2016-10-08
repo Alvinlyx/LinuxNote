@@ -27,7 +27,7 @@
 17. 开机失败 ，硬盘原因，可以fsck /dev/sda1 修复,无法进入可使用live CD 
 18. ctrl + ALt +　backspace: 解决x window 挂掉
 19. kde-nm-connection-editor 创建 wifi
-20. wget 实现文件下载
+
 21. free 查看内存使用量
 22. top实时显示进程
 23. ReText markdown 文本编辑器
@@ -35,27 +35,26 @@
 25. 文件查找 whereis locate find 
 1. umask 设置文件权限属性
 1. chttr +c（压缩文件） / i(不可更改)隐藏属性 lsattr 显示隐藏的属性
-2. lyx Latex 编辑器
 1. file 查看文件的类型
 2. which type 脚本文件查找
-2. sudo add-apt-repository ppa:pcf/miro-releases 更新ppa源
-3. 视频软件 Miro
-1. aria2c -s 2 -c http://download.kiwix.org/zim/wikipedia/wikipedia_zh_all_2016-03.zim
->>sudo apt install aria2
+3. 视频软件 vlc
+1. 下载工具 <br></br>
+- aria2c -s 2 -c http://download.kiwix.org/zim/wikipedia/wikipedia_zh_all_2016-03.zim<br></br>
+sudo apt install aria2
+- wget 
 2. 文件传输 iptux， 聊天pidgin 
 3. zlib 库 sudo apt-get install zlib1g-dev
 4. 环境变量 ～/.profile : export PATH="$PATH:/opt/kiwix/kiwix"
-5. pandoc test.mkd  -o 01-chapter2.docx --latex-engine=xelatex -V mainfont="STSong"
->>sudo apt-get install texlive-fonts-recommended <br></br>
->>sudo apt-get install texmaker
+5. pandoc test.mkd  -o 01-chapter2.docx --latex-engine=xelatex -V mainfont="STSong" <br></br>
+sudo apt-get install texlive-fonts-recommended <br></br>
+sudo apt-get install texmaker
 5. 挂载 mount umount -f(强行卸除)
 2. gdb 安装 sudo apt-get install libc6-dbg gdb valgrind
 3. 光盘刻录 cdrecord 制作ISO mkisofs
 4. startDict 安装词典 tar -xjvf a.tar.bz2 -C /usr/share/stardict/dic
-5. 开机启动 sudo cp /usr/share/applications/stardict.desktop   ~/.config/autostart/
 6. 休眠sudo pm-hibernate
-1. iconv -f 原本编码 -t 新编码 filename -o filename  
->> 繁体转简体  iconv -f utf8 -t big5 vi.utf8 | iconv -f big5 -t gb2312 | iconv -f gb2312 -t utf8 -o vi.gb.utf8
+1. iconv -f 原本编码 -t 新编码 filename -o filename   <br></br>
+  繁体转简体  iconv -f utf8 -t big5 vi.utf8 | iconv -f big5 -t gb2312 | iconv -f gb2312 -t utf8 -o vi.gb.utf8
 2. 查看字体 fc-list  
 1. sudo fc-cache -fv
 1. 网络信息 netstat -tuln
@@ -63,7 +62,8 @@
 1. 串口调试助手 cutecom
 1. Ctrl+z  暂停当前程序  fg 重新将程序唤到前台
 1. nahub 登出SSH会话仍然执行命令 
-1. 在特定时间运行命令  at   eg : at 10:38 PM Fri   at > cowsya "hello"  at > CTRL + D
+1. 在特定时间运行命令  at   eg : at 10:38 PM Fri  <br></br> at > cowsya "hello"  <br></br>at > CTRL + D
 1. htop 查看和管理进程  nohup sudo apt-get install vim &
 1. xkill 杀死线程
-1. linux 桌面启动慢 echo options radeon modeset=0 > /etc/modprobe.d/radeon-kms.conf
+1. linux 桌面启动慢 <br></br>
+echo options radeon modeset=0 > /etc/modprobe.d/radeon-kms.conf
