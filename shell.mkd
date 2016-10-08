@@ -12,10 +12,10 @@
 -  bg 后台运行 程序。类似与&
 -  aumix 设置音效
 -  自动调度作业　anacron 要好于 crontab
-- . anacron 配置文件在 /etc/anacrontab ,格式 [时间间隔] [等待时间] [任务标识] [命令] 时间间隔 以日为单位 等待时间单位秒， 任务标识 注释
+-  anacron 配置文件在 /etc/anacrontab ,格式 [时间间隔] [等待时间] [任务标识] [命令] 时间间隔 以日为单位 等待时间单位秒， 任务标识 注释
 
 ##变量
-- 特殊变量　　　　<br>　　　　　
+- 特殊变量　　　　
       - $#　参数的个数
       - $* 所有参数组成的字符串
       - $? 上次程序结束的返回值
@@ -23,7 +23,7 @@
 - 删除变量　用　unset name , 删除name 变量
 - 从键盘或者文件等标准输入给变量赋值read name1 name2 name2
 - 可以讲命令的返回内容赋值给变量　，用反引号执行命令，ｅｇ: a = `ls -l`
-- 变量输出方式　echo printf (类似于Ｃ格式化输出）
+- 变量输出方式　echo ; printf (类似于Ｃ格式化输出）
 - 数组变量 
      - 声明并赋值　std = (name1 name2)
      - 特殊的索引* @ 提取整个数组元素　
@@ -65,14 +65,27 @@ eg: test -d /home ; [-d /home]
 
 ##控制结构
 -  if 
+     - if 表达式　<br>
+        then 命令表<br>
+        [elif 表达式]<br>
+        then 命令表<br>
+        [else 命令表] <br>
+        fi
 -  case 
 -  select 
 -  while
+    - while 表达式 <br>
+      do  <br>
+        命令表 <br>
+      done
 -  for 
+    - for 变量 [in 列表]<br>
+     do <br>
+        命令表<br>
+     done
 -  until 
 -  break continue
 
 ##函数
 - 定义
 - 调用
-- 　
