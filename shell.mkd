@@ -1,0 +1,75 @@
+##系统命令
+1. 程序后台运行 nohup `cmd` &  ， 后面不可缺少 &
+2. 引号 反引号解释成命令
+3. $? 保存最近一次程序的返回值
+4. 系统运行时间 uptime
+5. pmap pid 显示线程的内存占用量
+6. killall vim 杀死所有vim同名线程
+7. pgrep name 查找线程，比 ps -e | grep name 要简洁
+8. pkill ps与kill的结合
+9. gcov  配合gcc使用分析代码效率
+10. exec `cmd` 执行完命令交出控制权 ，退出登录
+11. bg 后台运行 程序。类似与&
+12. aumix 设置音效
+12. 自动调度作业　anacron 要好于 crontab
+12. anacron 配置文件在 /etc/anacrontab ,格式 [时间间隔] [等待时间] [任务标识] [命令] 时间间隔 以日为单位 等待时间单位秒， 任务标识 注释
+##变量 
+1. 特殊变量　　　　<br>　　　　　
+      - $#　参数的个数
+      - $* 所有参数组成的字符串
+      - $? 上次程序结束的返回值
+      - $$ 当前程序的PID 
+1. 删除变量　用　unset name , 删除name 变量
+1. 从键盘或者文件等标准输入给变量赋值read name1 name2 name2
+1. 可以讲命令的返回内容赋值给变量　，用反引号执行命令，ｅｇ: a = `ls -l`
+1. 变量输出方式　echo printf (类似于Ｃ格式化输出）
+１. 数组变量 
+     - 声明并赋值　std = (name1 name2)
+     - 特殊的索引* @ 提取整个数组元素　
+     - @复制整个数组　
+     - *原数组的所有元素复制到新数组的一个元素
+     - 数组元素的个数　${# std [*]}
+     - 数组元素的长度　${# std [num]}
+##条件测试
+１. if while until 连用 test 表达式；　或者　[表达式]
+eg: test -d /home ; [-d /home]
+１. 测试文件属性
+    - -b file ;file 存在且为块设备
+    - -c file ;file 存在且为字符设备
+    - -r file ;file 存在且只读
+    - -w file ;file 存在且可写
+    - -x file ;file 存在且可执行
+    - -s file ;file 存在且长度大于０
+    - -d file ;file 是目录
+    - -f file ;file 是普通文件
+    - -e file ;文件存在　
+     
+1. 数值测试　
+    - n1 -eq n2  ;n1 == n2
+    - n1 -ne n2  ;n1 != n2
+    - n1 -gt n2  ;n1 >  n2
+    - n1 -lt n2  ;n1 <  n1
+    - n1 -ge n2  ;n1 >= n2
+    - n1 -le n2  ;n1 <= n2
+1. 测试字符串
+    - -z s1    　　; s1 长度０
+    - -n s1     　；s1 长度非０
+    - s1 = s2     ;
+    - s1 != s2    ;
+    - s1          ; s1 非空串
+１. 测试逻辑
+    - -a ;　与
+    - -o ;　或
+    - !  ;　非
+##控制结构
+1. if 
+2. case 
+3. select 
+4. while
+5. for 
+6. until 
+1. break continue
+##函数
+- 定义
+- 调用
+- 　
