@@ -88,4 +88,13 @@ eg: test -d /home ; [-d /home]
 
 ##函数
 - 定义
+    - [function] 函数名[()]<br>
+    {<br>
+        命令表<br>
+        [return ]<br>
+     }<br>
+  
 - 调用
+   - 函数名　[参数１] [参数２]
+- 载入函数
+>> 函数在另一个文件中，可用source file 载入函数文件
