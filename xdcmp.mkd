@@ -1,0 +1,9 @@
+##方法1
+>> 安装xterm
+>> ALT+CTRL+F2
+>> xinit /usr/bin/xterm -- :1
+>> ssh username@serverIP
+>> gnome-session
+
+## 方法二
+>> ssh -X -C username@serverIP -n gnome-panel

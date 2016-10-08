@@ -1,0 +1,6 @@
+#软件包管理
+1. [dpkg](./dpkg.mkd)
+
+#远程桌面登录
+1. [XDCMP](./xdcmp.mkd)
+2. VNC
