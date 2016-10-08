@@ -1,0 +1,69 @@
+2. 输入法控制器 fcitx
+5. 更改 字体大小 unity-tweak-tool
+6. shadowsocks 翻墙 
+	sudo add-apt-repository ppa:hzwhuang/ss-qt5
+	sudo apt-get update
+	sudo apt-get install shadowsocks-qt5
+7. 硬盘问题可以无法开机使用fsck工具
+9. 文本模式 run level 3 ;**
+	 x window run levle 5 ; 
+	 关机 run level 0 ;
+	 重新启动 run level : 6
+	 init 切换执行等级,关机init 0
+11. 日期 date cal(calendar)
+13.  man(manual) page eg: man date 帮助文档
+	1. 用户在 shell 环境中可以操作的指令或可执行文件
+	2. 系统核心可呼叫的函数与工具等
+	3. 一些常用的函数(function)与函数库(library)，大部分为 C 的函数库(libc)
+	4. 装置档案的说明，通常在/dev 下的档案
+	5. 配置文件或者是某些档案的格式
+	6. 游戏(games)
+	7. 惯例与协议等，例如 Linux 文件系统、网绚协议、 ASCII code 等等的说明
+	8. 系统管理员可用的管理指令
+	9. 跟 kernel 有关的文件
+14. info page /usr/share/doc
+15. 挂载的硬盘 /media/alvin/
+16. 系统状态 ： 用户 who ； 网络状态 netstat -a ; 后台程序 ps-aux
+17. 开机失败 ，硬盘原因，可以fsck /dev/sda1 修复,无法进入可使用live CD 
+18. ctrl + ALt +　backspace: 解决x window 挂掉
+19. kde-nm-connection-editor 创建 wifi
+20. wget 实现文件下载
+21. free 查看内存使用量
+22. top实时显示进程
+23. ReText markdown 文本编辑器
+24. sudo dpkg-reconfigure console-setup 修改控制台字体大小
+25. 文件查找 whereis locate find 
+1. umask 设置文件权限属性
+1. chttr +c（压缩文件） / i(不可更改)隐藏属性 lsattr 显示隐藏的属性
+2. lyx Latex 编辑器
+1. file 查看文件的类型
+2. which type 脚本文件查找
+2. sudo add-apt-repository ppa:pcf/miro-releases 更新ppa源
+3. 视频软件 Miro
+1. aria2c -s 2 -c http://download.kiwix.org/zim/wikipedia/wikipedia_zh_all_2016-03.zim
+sudo apt install aria2
+2. 文件传输 iptux， 聊天pidgin 
+3. zlib 库 sudo apt-get install zlib1g-dev
+4. 环境变量 ～/.profile : export PATH="$PATH:/opt/kiwix/kiwix"
+5. pandoc test.mkd  -o 01-chapter2.docx --latex-engine=xelatex -V mainfont="STSong"
+sudo apt-get install texlive-fonts-recommended
+sudo apt-get install texmaker
+5. 挂载 mount umount -f(强行卸除)
+2. gdb 安装 sudo apt-get install libc6-dbg gdb valgrind
+3. 光盘刻录 cdrecord 制作ISO mkisofs
+4. startDict 安装词典 tar -xjvf a.tar.bz2 -C /usr/share/stardict/dic
+5. 开机启动 sudo cp /usr/share/applications/stardict.desktop   ~/.config/autostart/
+6. 休眠sudo pm-hibernate
+1. iconv -f 原本编码 -t 新编码 filename -o filename  
+ 繁体转简体  iconv -f utf8 -t big5 vi.utf8 | iconv -f big5 -t gb2312 | iconv -f gb2312 -t utf8 -o vi.gb.utf8
+2. 查看字体 fc-list  
+1. sudo fc-cache -fv
+1. 网络信息 netstat -tuln
+1. unzip -O cp936 zip 文件名乱码
+1. 串口调试助手 cutecom
+1. Ctrl+z  暂停当前程序  fg 重新将程序唤到前台
+1. nahub 登出SSH会话仍然执行命令 
+1. 在特定时间运行命令  at   eg : at 10:38 PM Fri   at > cowsya "hello"  at > CTRL + D
+1. htop 查看和管理进程  nohup sudo apt-get install vim &
+1. xkill 杀死线程
+1. linux 桌面启动慢 echo options radeon modeset=0 > /etc/modprobe.d/radeon-kms.conf
