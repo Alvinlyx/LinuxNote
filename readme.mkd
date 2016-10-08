@@ -1,4 +1,5 @@
 #[linux基础学习](./linux.mkd)
+#[shell 编程基础](./shell.mkd)
 #软件包管理
 1. [dpkg](./dpkg.mkd)
 
