@@ -38,22 +38,22 @@
 1. file 查看文件的类型
 2. which type 脚本文件查找
 3. 视频软件 vlc
-1. 下载工具 <br></br>
-- aria2c -s 2 -c http://download.kiwix.org/zim/wikipedia/wikipedia_zh_all_2016-03.zim<br></br>
+1. 下载工具 <br>
+- aria2c -s 2 -c http://download.kiwix.org/zim/wikipedia/wikipedia_zh_all_2016-03.zim<br>
 sudo apt install aria2
 - wget 
 2. 文件传输 iptux， 聊天pidgin 
 3. zlib 库 sudo apt-get install zlib1g-dev
 4. 环境变量 ～/.profile : export PATH="$PATH:/opt/kiwix/kiwix"
-5. pandoc test.mkd  -o 01-chapter2.docx --latex-engine=xelatex -V mainfont="STSong" <br></br>
-sudo apt-get install texlive-fonts-recommended <br></br>
+5. pandoc test.mkd  -o 01-chapter2.docx --latex-engine=xelatex -V mainfont="STSong" <br>
+sudo apt-get install texlive-fonts-recommended <br>
 sudo apt-get install texmaker
 5. 挂载 mount umount -f(强行卸除)
 2. gdb 安装 sudo apt-get install libc6-dbg gdb valgrind
 3. 光盘刻录 cdrecord 制作ISO mkisofs
 4. startDict 安装词典 tar -xjvf a.tar.bz2 -C /usr/share/stardict/dic
 6. 休眠sudo pm-hibernate
-1. iconv -f 原本编码 -t 新编码 filename -o filename   <br></br>
+1. iconv -f 原本编码 -t 新编码 filename -o filename   <br>
   繁体转简体  iconv -f utf8 -t big5 vi.utf8 | iconv -f big5 -t gb2312 | iconv -f gb2312 -t utf8 -o vi.gb.utf8
 2. 查看字体 fc-list  
 1. sudo fc-cache -fv
@@ -62,8 +62,8 @@ sudo apt-get install texmaker
 1. 串口调试助手 cutecom
 1. Ctrl+z  暂停当前程序  fg 重新将程序唤到前台
 1. nahub 登出SSH会话仍然执行命令 
-1. 在特定时间运行命令  at   eg : at 10:38 PM Fri  <br></br> at > cowsya "hello"  <br></br>at > CTRL + D
+1. 在特定时间运行命令  at   eg : at 10:38 PM Fri  <br> at > cowsya "hello"  <br>at > CTRL + D
 1. htop 查看和管理进程  nohup sudo apt-get install vim &
 1. xkill 杀死线程
-1. linux 桌面启动慢 <br></br>
+1. linux 桌面启动慢 <br>
 echo options radeon modeset=0 > /etc/modprobe.d/radeon-kms.conf
