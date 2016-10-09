@@ -26,8 +26,7 @@
 16. 系统状态 ： 用户 who ； 网络状态 netstat -a ; 后台程序 ps-aux
 17. 开机失败 ，硬盘原因，可以fsck /dev/sda1 修复,无法进入可使用live CD 
 18. ctrl + ALt +　backspace: 解决x window 挂掉
-19. kde-nm-connection-editor 创建 wifi
-
+19. kde-nm-connection-editor 或者 create_ap 创建 wifi 
 21. free 查看内存使用量
 22. top实时显示进程
 23. ReText markdown 文本编辑器
@@ -62,7 +61,7 @@ sudo apt-get install texmaker
 1. 串口调试助手 cutecom
 1. Ctrl+z  暂停当前程序  fg 重新将程序唤到前台
 1. nahub 登出SSH会话仍然执行命令 
-1. 在特定时间运行命令  at   eg : at 10:38 PM Fri  <br> at > cowsya "hello"  <br>at > CTRL + D
+1. 在特定时间运行命令 <br> at   eg : at 10:38 PM Fri  <br> at > cowsya "hello"  <br>at > CTRL + D
 1. htop 查看和管理进程  nohup sudo apt-get install vim &
 1. xkill 杀死线程
 1. linux 桌面启动慢 <br>
