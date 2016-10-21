@@ -66,3 +66,4 @@ sudo apt-get install texmaker
 1. xkill 杀死线程
 1. linux 桌面启动慢 <br>
 echo options radeon modeset=0 > /etc/modprobe.d/radeon-kms.conf
+1. liunx 下Ｃ代码查看器　snavigator
